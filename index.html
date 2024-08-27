@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vòng Quay Mã Số Dự Thưởng</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1>CÔNG TY TNHH KIÊN NAM</h1>
+            <h2>Vòng quay mã số dự thưởng</h2>
+        </header>
+
+        <form id="registration-form">
+            <label for="agent-name">Tên đại lý:</label>
+            <input type="text" id="agent-name" name="agent-name" required>
+
+            <label for="agent-phone">Số điện thoại đại lý:</label>
+            <input type="tel" id="agent-phone" name="agent-phone" required>
+
+            <button type="submit">Nhấn để gửi</button>
+        </form>
+
+        <div class="wheel-container">
+            <img src="wheel.png" alt="Vòng quay" class="wheel" id="wheel">
+            <button id="spin-button">Nhấn để quay số</button>
+            <div class="result">
+                <span id="result-number">308</span>
+                <span>Số lần quay: <span id="spin-count">01</span></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
